@@ -1,3 +1,38 @@
+/*
+===============================================================================
+Data Quality & Validation Script: CLEAN and LOAD Checks
+===============================================================================
+Purpose:
+    This script performs comprehensive data quality validations across 
+    multiple Bronze and Silver layer tables before promoting data from 
+    Bronze -> Silver -> Gold layers.
+
+    It validates:
+      ✔ Primary Key Integrity (Uniqueness & Not Null)
+      ✔ Data Cleanliness (Trimming, Invalid Formats, Spaces)
+      ✔ Data Accuracy (Business Rule Validation)
+      ✔ Data Standardization & Consistency (Low Cardinality Checks)
+      ✔ Null / Negative / Out-of-Range Value Detection
+      ✔ Temporal Logic Validations (Start-End Dates, Shipping, Due Dates)
+      ✔ Data Integrity Across Layers (Bronze vs Silver Comparison)
+
+Usage Instructions:
+    1. Run Bronze Layer validation checks after initial ingestion.
+    2. Apply cleansing/transformation logic to load data into Silver.
+    3. Re-run same validations on Silver Layer to confirm data quality improvement.
+    4. If all checks pass → Promote to Gold Layer.
+
+Expected Outcome:
+    - All validation queries should return ZERO records.
+    - Any returned rows indicate data quality issues to be addressed.
+
+Author: <Sravanth Kumar>
+Environment: SQL / Data Warehouse (Bronze-Silver-Gold Architecture)
+Date: <Insert Date>
+
+===============================================================================
+*/
+
 ----------------------------------------CLEAN AND LOAD FOR bronze.crm_cust_info--------------------------------
 --CHEK FOR NULLs OR DUPLICATES IN PRIMARY KEY 
 --EXPECTATION: NO RESULT
