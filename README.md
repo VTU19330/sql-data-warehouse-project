@@ -19,7 +19,7 @@ Specifications
 •	Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
 •	Scope: Focus on the latest dataset only; historization of data is not required.
 •	Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-________________________________________
+_______________________________________
 BI: Analytics & Reporting (Data Analysis)
 Objective
 Develop SQL-based analytics to deliver detailed insights into:
@@ -27,5 +27,9 @@ Develop SQL-based analytics to deliver detailed insights into:
 •	Product Performance
 •	Sales Trends
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+
+DATA ARCHITECTURE
+The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers
+
 
 Hey, I'm Sravanth Kumar 
