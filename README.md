@@ -28,9 +28,4 @@ Develop SQL-based analytics to deliver detailed insights into:
 •	Sales Trends
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
-DATA ARCHITECTURE
-
-The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers
-
-
 Hey, I'm Sravanth Kumar 
